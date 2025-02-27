@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "coverage>=7.6.12",
     "ipykernel>=6.29.5",
     "jupyterlab>=4.3.5",
     "nbmake>=1.5.5",
@@ -19,6 +20,7 @@ test=[
     "pytest>=8.3.4",
     "pytest-cov>=6.0.0",
     "nbmake>=1.5.5",
+    "coverage>=7.6.12",
 ]
 
 [tool.pytest.ini_options]

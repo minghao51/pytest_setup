@@ -26,4 +26,5 @@ jobs:
 
       - name: Run pytest with coverage
         run: |
-          pytest --cov=./tests --cov-report=xml
+          coverage run -m pytest -v -cov-report=xml
+          coverage xml
