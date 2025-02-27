@@ -1194,14 +1194,24 @@ dependencies = [
     { name = "streamlit" },
 ]
 
+[package.optional-dependencies]
+test = [
+    { name = "nbmake" },
+    { name = "pytest" },
+    { name = "pytest-cov" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "jupyterlab", specifier = ">=4.3.5" },
     { name = "nbmake", specifier = ">=1.5.5" },
+    { name = "nbmake", marker = "extra == 'test'", specifier = ">=1.5.5" },
     { name = "numpy", specifier = ">=2.2.3" },
     { name = "pytest", specifier = ">=8.3.4" },
+    { name = "pytest", marker = "extra == 'test'", specifier = ">=8.3.4" },
     { name = "pytest-cov", specifier = ">=6.0.0" },
+    { name = "pytest-cov", marker = "extra == 'test'", specifier = ">=6.0.0" },
     { name = "streamlit", specifier = ">=1.42.2" },
 ]
 
